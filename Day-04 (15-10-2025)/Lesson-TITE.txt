@@ -1,0 +1,81 @@
++--------------------+
+| Monday 13-10-2025  |   Day-03
++--------------------+
+=	IDE = Integrated Development Environment
+=	RAD = Rapid Application Development
+
++-----------------------+
+| Wednesday 15-10-2025  |   Day-04
++-----------------------+
+=	for loop
+	Syntax:
+		for([initializer]; [condition]; [increment/decrement]) [{}]
+
+	Example:
+    (1)
+		for(;;)
+            System.out.println("Hello World!");
+            System.out.println("I am Java");
+
+    (2)
+        for(int i=0; i<5; i++) {
+            System.out.println("Hello World!");
+        }
+        
+    (3)
+        int num = 25;
+        for(;num>20;) {
+            System.out.println("Hello World!");
+            num = num-1;
+        }
+
+    (4)
+        for(int i=5, j=0, k=7; i>0 && k>4; i--, j++, k--) {
+            System.out.println("Hello World!");
+        }
+
+    (5)
+        int num = 25;
+        for(;;) {
+            System.out.println("Hello World!");
+            num = num-1;
+            if(num<=20) {
+                break;
+            }
+        }
+
+
+=	while loop
+=	What is a while loop?
+    While is a conditional loop.
+    Syntax:
+        while(<condition>) [{}]
+    
+=   What is a condition?
+    Example:
+        int i=10;
+        i<=12 && i>5 || i==3
+        true
+        false
+        1==3
+
+        while(true) {
+            System.out.println("Good Students");
+        }
+
+        boolean ok = true;
+        int count = 0;
+        while(ok) {
+            System.out.println("Good Students");
+            count = count + 1;
+            if(count>5) {
+                ok = false;
+            }
+        }
+
+=   What is do loop?
+    The do loop is blind for the first time.
+
+        do {
+            System.out.println("Print Something");
+        } while(false);
