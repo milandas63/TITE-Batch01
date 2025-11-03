@@ -1,0 +1,417 @@
++--------------------+
+| Monday 13-10-2025  |   Day-03
++--------------------+
+=	IDE = Integrated Development Environment
+=	RAD = Rapid Application Development
+
++-----------------------+
+| Wednesday 15-10-2025  |   Day-04
++-----------------------+
+=	for loop
+	Syntax:
+		for([initializer]; [condition]; [increment/decrement]) [{}]
+
+	Example:
+    (1)
+		for(;;)
+            System.out.println("Hello World!");
+            System.out.println("I am Java");
+
+    (2)
+        for(int i=0; i<5; i++) {
+            System.out.println("Hello World!");
+        }
+        
+    (3)
+        int num = 25;
+        for(;num>20;) {
+            System.out.println("Hello World!");
+            num = num-1;
+        }
+
+    (4)
+        for(int i=5, j=0, k=7; i>0 && k>4; i--, j++, k--) {
+            System.out.println("Hello World!");
+        }
+
+    (5)
+        int num = 25;
+        for(;;) {
+            System.out.println("Hello World!");
+            num = num-1;
+            if(num<=20) {
+                break;
+            }
+        }
+
+
+=	while loop
+=	What is a while loop?
+    While is a conditional loop.
+    Syntax:
+        while(<condition>) [{}]
+    
+=   What is a condition?
+    Example:
+        int i=10;
+        i<=12 && i>5 || i==3
+        true
+        false
+        1==3
+
+        while(true) {
+            System.out.println("Good Students");
+        }
+
+        boolean ok = true;
+        int count = 0;
+        while(ok) {
+            System.out.println("Good Students");
+            count = count + 1;
+            if(count>5) {
+                ok = false;
+            }
+        }
+
+=   What is do loop?
+    The do loop is blind for the first time.
+
+        do {
+            System.out.println("Print Something");
+        } while(false);
+
++--------------------+
+| Friday 17-10-2025  |   Day-05
++--------------------+
+
+=   Create 10 questions using ChatGPT on the following topics:
+    a)  for loop statement
+    b)  while loop statement
+    c)  do...while loop statement
+    d)  if conditional statement
+    e)  switch conditional statement
+
+    Write 10 MCQ questions on for loop statement in Java?
+
+=   MCQs on 'for' Loop Statement
+    1. What is the primary purpose of a 'for' loop in programming?
+        A) To execute a block of code only if a condition is true.
+        B) To handle errors and exceptions in the code.
+        C> To repeat a block of code a specific number of times.
+        D) To define a new function.
+
+    2. In a standard for loop, which of the following is NOT one of the three main parts inside the parentheses?
+        A) Initialization
+        B) Condition
+        C) Increment/Decrement
+        D) Variable Declaration
+
+    3. What will be the output of the following C++ code?
+        for(int i = 0; i < 3; i++) {
+            cout << i << " ";
+        }
+        A) 0 1 2
+        B) 0 1 2 3
+        C) 1 2 3
+        D) 1 2
+
+    4. How many times will the word "Hello" be printed?
+        for(int i = 5; i > 0; i--) {
+            cout << "Hello ";
+        }
+        A) 4 times
+        B) 5 times
+        C) 6 times
+        D) Infinite times
+
+    5. In a for loop, what happens if the condition check is omitted entirely? (e.g., for(int i=0; ; i++))
+        A) The loop will not run.
+        B) The loop will run exactly once.
+        C) The loop will run indefinitely (infinite loop).
+        D) It will cause a compile-time error.
+
+    6. Which of the following for loop declarations is syntactically INCORRECT in Java?
+        A) for(int i=0; i<10; i++)
+        B) for(int i=0, j=10; i<j; i++, j--)
+        C) for(;;)
+        D) for(int i=0; i<10; i--)
+
+    7. What is the final value of the variable sum after this loop executes?
+        int sum = 0;
+        for(int i = 1; i <= 5; i++) {
+            sum += i;
+        }
+        A) 10
+        B) 15
+        C) 5
+        D) 6
+
+    8. Which concept is demonstrated when one for loop is placed inside another?
+        A) Function Overloading
+        B) Recursion
+        C) Nested Loops
+        D) Inheritance
+
+    9. What is the key difference between a for loop and a while loop?
+        A) A for loop can only use integers, while a while loop can use any data type.
+        B) A for loop is always more efficient than a while loop.
+        C) A for loop typically encapsulates initialization, condition, and iteration in one line, while a while loop does not.
+        D) There is no difference; they are interchangeable in all situations.
+
+    10. What will this code snippet print?
+        for x in range(2, 6):
+            print(x, end=" ")
+        A) 2 3 4 5 6
+        B) 2 3 4 5
+        C) 1 2 3 4 5
+        D) 3 4 5
+
+=   Keywords in Java
+    =   How many keywords are there in Java?
+            LIST OF RESERVE WORDS/KEY WORDS IN JAVA (53 words)
+            abstract    continue    for         new         switch
+            assert***   default     goto*       package     synchronized
+            boolean     do          if          private     this
+            break       double      implements  protected   throw
+            byte        else        import      public      throws
+            case        enum****    instanceof  return      transient
+            catch       extends     int         short       try
+            char        final       interface   static      void
+            class       finally     long        strictfp**  volatile
+            const*      float       native      super       while
+            null        true        false
+
+            *       not used
+            **      added in 1.2
+            ***     added in 1.4
+            ****    added in 5.0
+
+=   Today's Lesson
+    >   Java programs are written within a class.
+    >   A class is created with the help of a keyword named class.
+    >   Java is a case-sensitive language. Follow the case strictly.
+
+
+=   class <user-identifier> {
+    }
+
+=   Syntax of a class statement:
+        for([]; []; []) [{}]
+        for(;;) System.out.println("Hello World!");
+
+        [access-modifier] [modifier] class <class-name> [extends <parent-class>] [implements <interface,interface,...>] {}
+
+        [access-modifier]
+        [modifier]
+        class <class-name>
+        [extends <parent-class>]
+        [implements <interface,interface,...>]
+        {}
+
+    Example:
+        class MyClass {}
+        class Example {}
+
+        class Example extends MyClass {}
+
+        +-  Object
+        |   +-  MyClass
+        |   |   +- Example
+
+        [access-modifier]
+        It provides access to the class.
+        There are 3 keywords for defining the acess:
+        1)  public
+            The public class may be accessed by another class using both, inheritance and object reference.
+        2)  protected
+            The protected class may be accessed only by object reference and inheritance is restricted if
+            they are across different packages.
+        3)  private
+        4)  <undefined>
+
+        private class Example {}
+
+
+        In Java hierarchy, every class must inherit java.lang.Object.
+        +- package-1
+        |   +- class-101
+        |   +- class-102
+        |   +- protected class-103
+        |   +- package-11
+        |      +- class-104
+        |      +- class-105
+        |      +- class-106
+        +- package-3
+        |   +- class-201
+        |   +- class-202
+        +- package-31
+        |  +- class-203
+        |  +- class-204
+        +- package-4
+        |  +- class-301
+        |  +- class-102
+        |  +- class-202
+
+=   There are 2 ways, how one class can access another class:
+
+    public class AddRecurrsive {
+        int multiply(n, o) {
+            int prod = 0;
+            for(int i=0; i<o; i++) {
+                prod = prod+n;
+            }
+            return prod;
+        }
+    }
+
+    class Multiply {
+        public static void main(String[] args) {
+            AddRecurrsive ar = new AddRecurrsive();
+            int result = ar.multiply(3,4);
+        }
+    }
+
+    class Multiply extends AddRecurrsive {
+        public int compute() {
+            int result = multiply(3,4);
+        }
+    }
+
+
++--------------------+
+| Monday 27-10-2025  |   Day-06
++--------------------+
+    =   Write a program to draw a line of 50 astericks?
+
+        class Line {
+            void start() {
+            }
+        }
+
+    =   What is the difference between argument and parameter?
+        The sender sends arguments and the receiver receives parameter.
+
+    =   Writing program:
+            Line.java
+
+
++-----------------------+
+| Wednesday 29-10-2025  |   Day-07
++-----------------------+
+    = What is an array?
+        Array is a collection of data of same type:
+        >   An array must have items of same data-type
+        >   An array items start its index number from zero.
+
+        Invalid array                       Valid array  (datatype <nameOfVariable>)
+                                            String[] name
+        +---------------------+             +---------------------+
+        | true                |             | TITE                |     0
+        +---------------------+             +---------------------+
+        | Narendra Modi       |             | Narendra Modi       |     1
+        +---------------------+             +---------------------+
+        | 21                  |             | Barunei             |     2
+        +---------------------+             +---------------------+
+        |                     |             |                     |
+        +---------------------+             +---------------------+
+        |                     |             |                     |
+        +---------------------+             +---------------------+
+
+    =   Overloading of functions/methods
+        When more then one function/method is created with the same name within the same class,
+        it is called overloading of method. In overloading of functions, the parameter list of
+        the functions must be different.
+
++--------------------+
+| Friday 31-10-2025  |   Day-08
++--------------------+
+    =   What is Overriding of functions/methods?
+        When a method that is defined in the parent class is also defined in the child class with
+        same parameter list is known as overriding of method.
+
++--------------------+
+| Monday 03-11-2025  |   Day-09
++--------------------+
+    =   There is a class in the name Mathematics. 
+    =   A user defined name in Java is called an user identifier.
+        User defined identifiers are required to be created in the following entities:
+        >   File names
+        >   Class names
+        >   Method/function names
+        >   Field/Variable names
+
+    =   RULES FOR NAMING AN USER IDENTIFIER
+        >   Only alphabetic characters (A-Z, a-z), digit characters (0-9) or $ (dollar sign) or
+            _ (underscore sign) may be used in the name
+        >   The name of an user identifier must START using an alphabetic chracter or $ (dollar)
+            sigh or _ (underscore) sign
+        >   Their is no restriction in the length of the name
+        >   1. Filename & classname should start with uppercase alphabetic character
+            2. Method name and field name should start with lower case alphabetic character
+            3. The name may use camel casing structure to define
+        
+
+            int $total = 10;
+            class work {}
+    
+    =   There are 3 content of a class:
+        1.  Fields/Variables
+        2.  Constructor
+        3.  Methods/Functions
+
+        public class SolarSystem {
+            // Fields/Variables
+            String name;
+            double distance;
+            double diameter;
+
+            // Constructor
+            public SolarSystem() {
+            }
+            public SolarSystem(String name, double distance, double diameter) {
+            }
+
+            //  Methods
+            public String getName() {
+                return "Earth";
+            }
+        }
+
+    =   Write a program to reverse a given string?
+
+        The given string is: Quick Brown Fox Jumps Over The Lazy Dog
+        Expected result:     goD yzaL ehT revO spmuJ xoF nworB kciuQ
+
+        public class Reverse {
+            public static void main(String[] args) {
+                //String str = new String("Quick Brown Fox Jumps Over The Lazy Dog");
+                String str = "Quick Brown Fox Jumps Over The Lazy Dog";
+
+                for(int i=39; i>=0; i--) {
+                    System.out.print(str.charAt(i));
+                }
+                System.out.println();
+            }
+        }
+
+    =   Write a program to change the case of each characters in a given string?
+
+        The given string is: Quick Brown Fox Jumps Over The Lazy Dog
+        Expected result:     qUICK bROWN fOX jUMPS oVER tHE lAZY dOG
+
+        public class ChangeCase {
+            public static void main(String[] args) {
+                String str = "Quick Brown Fox Jumps Over The Lazy Dog";
+                char c;
+                for(int i=0; i<str.length(); i++) {
+                    c = str.charAt(i);
+                    if(c>=65 && c<=90) {
+                        c = c+32;
+                    } else if(c>=97 && c<=122) {
+                        c = c-32;
+                    }
+                    System.out.print(c);
+                }
+                System.out.println();
+            }
+        }
