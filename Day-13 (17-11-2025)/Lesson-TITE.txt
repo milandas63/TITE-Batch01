@@ -673,3 +673,7 @@
 
         FileInputStream fis = new FileInputStream("classes.txt");
         FileOutputStream fos = new FileOutputStream("c.txt");
+
+    =   HOMEWORK
+        Write a program to take name, father-name, gender, date-of-birth, mobile-number, email-id from
+        the keyboard and write it to a file.
